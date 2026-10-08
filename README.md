@@ -6,7 +6,7 @@ Course: Autonomous Vehicles & Drive-by-Wire Systems | Individual Project
 
 | | |
 |---|---|
-| **Repository** | https://github.com/FikryAdel/Fikry_Arab_Control_Task-.git |
+| **Repository** | https://github.com/FikryAdel/Fikry_Arab_Control_Task- |
 
 ---
 
@@ -252,7 +252,7 @@ python3 -m pytest src/Control_Project/bicycle_sim/test/test_bicycle_model.py \
 | 3 | same | `publish_commands` | 0.5 s safety watchdog and 10 Hz publishing |
 | 4 | same | `__init__`, `odom_callback` | Cruise-control mode: `/state` subscription, PID, `use_cruise_control` switch |
 | 4 | `bicycle_control/bicycle_control/longitudinal_pid.py` | `compute` | PID on speed error, integral anti-windup clamp, output saturation |
-| 5.1 | `bicycle_control/bicycle_control/velocity_profiler.py` | `compute_target_speed` | Curvature-limited speed `sqrt(a_lat/abd(k), clamped |
+| 5.1 | `bicycle_control/bicycle_control/velocity_profiler.py` | `compute_target_speed` | Curvature-limited speed `sqrt(a_lat/abs(k), clamped |
 | 5.2 | `bicycle_control/bicycle_control/lateral_pid.py` | `compute_steering` | PID on CTE plus heading term, negative-sign convention, anti-windup, saturation |
 | 5.3 | `bicycle_control/bicycle_control/pure_pursuit.py` | `compute_lookahead`, `find_target_waypoint`, `compute_steering` | Adaptive look-ahead, forward waypoint search on the closed loop, arc law |
 | 5.4 | `bicycle_control/bicycle_control/mpc.py` | `solve` | Prediction model, Frenet-frame cost, bounds, warm start, SLSQP |
